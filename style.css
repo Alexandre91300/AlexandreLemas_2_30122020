@@ -1,18 +1,24 @@
+/* INITIALISATION */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    width: auto;
-    height: 100vh;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+
+header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #3498db;
+    justify-content: space-between;
+    padding: 20px 20px;
+    width: auto;
 }
 
-h1 {
-    color: white;
+.header-link {
+    margin-left: 70px;
 }
