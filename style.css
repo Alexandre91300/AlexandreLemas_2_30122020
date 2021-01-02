@@ -1,7 +1,15 @@
-/* INITIALISATION */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/*
+font-family: 'Raleway', sans-serif;
+*/
+/* ___________________________________________INITIALISATION ___________________________________________ */
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.5s;
+    box-sizing: border-box;
 }
 
 a {
@@ -9,16 +17,276 @@ a {
     color: black;
 }
 
-/* HEADER */
+/* ___________________________________________HEADER ___________________________________________ */
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 20px;
+    padding: 30px 30px;
     width: auto;
 }
 
 .header-link {
     margin-left: 70px;
+}
+
+#this-page {
+    color: #0065FC;
+}
+
+#inscription {
+    color: #0065FC;
+    font-weight: bold;
+}
+
+/* ___________________________________________SECTION 1 | FILTRE ___________________________________________ */
+
+
+.filtre-section {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+
+/*Title*/
+
+.filtre-title {
+    margin-bottom: 10px;
+}
+
+
+/*Subtitle*/
+
+.filtre-subtitle {
+    margin-bottom: 20px;
+}
+
+
+/*Input*/
+
+.inp-icon {
+    width: 42px;
+    height: 42px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-inp {
+    height: 40px;
+    outline: none;
+    border: 1px solid #F2F2F2;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+
+.filtre-search-btn {
+    color: white;
+    background-color: #3865fd;
+    border: 1px solid #3865fd;
+    height: 42px;
+    width: 100px;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+
+/*Filtre*/
+
+.filtre-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+    margin-bottom: 30px;
+}
+
+.filtre-container>p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.filtre-box {
+    border-radius: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F2F2F2;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.filtre-box:hover {
+    color: white;
+    background-color: #DEEBFF;
+}
+
+.filtre-box:hover>div {
+    background-color: #0065FC;
+}
+
+.filtre-box:hover>div>i {
+    color: white;
+}
+
+.filtre-box:hover>p {
+    color: #0065FC;
+}
+
+
+.filtre-box-txt {
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.filtre-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #DEEBFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtre-icon>i {
+    color: #0065FC;
+    width: auto;
+    height: auto;
+}
+
+.filtre-search {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+/*Info*/
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #F2F2F2;
+    border-radius: 100px;
+    margin-right: 10px;
+
+}
+
+.info>div>i {
+    color: #0065FC;
+}
+
+
+/* ___________________________________________SECTION 2 | HEBERGEMENT ___________________________________________ */
+
+
+.hebergement-section {
+    background-color: #f1f2f3;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Titre*/
+
+.hebergement-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+/*Grille*/
+
+.hebergement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    margin-bottom: 20px;
+    grid-gap: 20px;
+}
+
+.hebergement-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*Boxs*/
+
+.hebergement-box {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+
+.hebergement-box-img {
+    width: 100%;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.hebergement-title-box {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hebergement-subtitle {
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+
+.low-price {
+    font-weight: bold;
+}
+
+.star-note {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    margin: 5px 0 5px 10px;
+
+}
+
+.star-note>i {
+    color: #d6d8dc;
+}
+
+.star-true {
+    color: #0065FC !important;
+}
+
+
+
+/*Plus*/
+
+.plus {
+    font-size: 18px;
 }
