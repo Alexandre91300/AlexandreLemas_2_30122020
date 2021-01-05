@@ -22,6 +22,9 @@ a {
     color: black;
 }
 
+/* ___________________________________________DESKTOP > 990PX ___________________________________________ */
+
+
 /* ___________________________________________HEADER___________________________________________ */
 
 header {
@@ -209,9 +212,10 @@ header {
 
 .section-regroupement {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-direction: row;
+    width: 100%;
 }
 
 /* ___________________________________________SECTION 2 | HEBERGEMENT ___________________________________________ */
@@ -224,15 +228,20 @@ header {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 /*Grille*/
 
 .hebergement-grid {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(auto-fit, minmax(33%, 180px));
     margin-bottom: 20px;
+    margin-left: 12px;
     grid-gap: 20px;
+    margin-right: 10px;
+    justify-content: center;
+    max-width: 775px;
 }
 
 .hebergement-title {
@@ -249,6 +258,7 @@ header {
     border-radius: 20px;
     padding: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+    width: 100%;
 
 }
 
@@ -313,7 +323,8 @@ header {
     padding: 30px;
     margin: 30px;
     border-radius: 10px;
-    width: 100%;
+    width: auto;
+    max-width: 400px;
     height: 551px;
     margin-left: 0;
 }
@@ -321,6 +332,17 @@ header {
 .pop-title {
     font-size: 25px;
     font-weight: bold;
+}
+
+.pop-title-ctn {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: auto;
+}
+
+.pop-title-ctn>i {
+    margin: auto 0;
 }
 
 /*Container*/
@@ -351,7 +373,7 @@ header {
 }
 
 .box-img {
-    width: 150px;
+    width: 33%;
     height: 100%;
     border-radius: 20px 0px 0px 20px;
 }
@@ -497,3 +519,115 @@ footer {
     font-size: 18px;
     margin-bottom: 10px;
 }
+
+/* ________________________________________________________________________________________________ */
+/* ___________________________________________RESPONSIVE___________________________________________ */
+/* ________________________________________________________________________________________________ */
+
+
+/* ___________________________________________TABLETTE < 990PX ___________________________________________ */
+
+@media screen and (max-width: 990px) {
+    .section-regroupement {
+        flex-direction: column-reverse;
+    }
+
+    /*Filtre*/
+
+    .filtre-container {
+        flex-wrap: wrap;
+        width: 80%;
+        height: auto;
+    }
+
+    .filtre-box {
+        margin: 0 10px 10px 10px;
+    }
+
+    /*Hébergement*/
+
+    .hebergement-section {
+        background-color: #f1f2f3;
+        padding: 30px;
+        margin: 15px 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hebergement-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(33%, 180px));
+        margin-bottom: 20px;
+        margin-left: 12px;
+        grid-gap: 20px;
+        margin-right: 10px;
+        justify-content: center;
+    }
+
+    /*Populaire*/
+
+    .pop_section {
+        background-color: #f1f2f3;
+        padding: 30px;
+        margin: 15px 0;
+        border-radius: 0;
+        width: 100%;
+        max-width: none;
+        height: 551px;
+    }
+
+    .pop-box {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 5px;
+        width: 100%;
+        height: 135px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+    }
+
+    /*Activité*/
+
+    .activite-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 30px;
+
+    }
+
+    .activite-grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6 {
+        height: 250px;
+        width: 100% !important;
+        margin: 5px 0;
+    }
+
+    .act-box-img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 200px !important;
+    }
+
+}
+
+
+
+/* ___________________________________________MOBILE < 770PX ___________________________________________ */
