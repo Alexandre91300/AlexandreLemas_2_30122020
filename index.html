@@ -14,16 +14,12 @@
     <!--HEADER-->
     <header>
         <img src="images/logo/Reservia.svg" alt="Logo de Reservia">
-        <nav>
+        <nav class="header-nav">
             <a href="#hebergement-section" class="header-link nav-hebergement this-page">Hébergement</a>
             <a href="#activite-section" class="header-link nav-activité">Activités</a>
             <a href="#" class="header-link " id="inscription">S'inscrire</a>
         </nav>
     </header>
-    <nav class="second-nav">
-        <a href="#hebergement-section" class="header-link this-page">Hébergement</a>
-        <a href="#activite-section" class="header-link">Activités</a>
-    </nav>
 
 
     <!--_______________________SECTION 1 | Filtre_______________________ -->
@@ -31,39 +27,41 @@
         <!--Title-->
         <h1 class="filtre-title">Trouvez votre hébergement pour des vacances de rêve</h1>
         <!--Subtitle-->
-        <p class="filtre-subtitle">En plein centre ville ou pleine nature</p>
+        <p class="filtre-subtitle">En plein centre ville ou en pleine nature</p>
         <!--Input TEXTE-->
         <form class="filtre-search">
             <div class="inp-icon">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
             <input class="search-inp" type="text" value="Marseille, France">
-            <button class="filtre-search-btn" type="submit">Rechercher</button>
+            <button class="filtre-search-btn" type="submit"><span>Rechercher</span>
+                <i class="fas fa-search"></i>
+            </button>
         </form>
         <!--Filtre-->
         <div class="filtre-container">
-            <p>Filtres</p>
+            <p id="filtre-ctn-txt">Filtres</p>
             <div class="filtre-box">
                 <div class="filtre-icon">
-                    <i class="fas fa-money-bill-wave"></i>
+                    <i class="fas fa-money-bill-wave fa-sm"></i>
                 </div>
                 <p class="filtre-box-txt">Économique</p>
             </div>
             <div class="filtre-box">
                 <div class="filtre-icon">
-                    <i class="fas fa-child"></i>
+                    <i class="fas fa-child fa-sm"></i>
                 </div>
                 <p class="filtre-box-txt">Familial</p>
             </div>
             <div class="filtre-box">
                 <div class="filtre-icon">
-                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart fa-sm"></i>
                 </div>
                 <p class="filtre-box-txt">Romantique</p>
             </div>
             <div class="filtre-box">
                 <div class="filtre-icon">
-                    <i class="fas fa-dog"></i>
+                    <i class="fas fa-dog fa-sm"></i>
                 </div>
                 <p class="filtre-box-txt">Animaux autorisé</p>
             </div>
@@ -71,7 +69,7 @@
         <!--Info-->
         <div class="info">
             <div>
-                <i class="fas fa-info"></i>
+                <i class="fas fa-info fa-sm"></i>
             </div>
             <p class="info-txt">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
@@ -84,7 +82,6 @@
             <h2 class="hebergement-title">Hébergements à Marseille</h2>
             <!--Grid-->
             <div class="hebergement-grid">
-                <!--Boxs-->
                 <!--Box 1-->
                 <div class="hebergement-box">
                     <img src="images/hebergements/4_small/auberge-cannebiere.jpg" class="hebergement-box-img"
@@ -182,7 +179,6 @@
                     </div>
                 </div>
             </div>
-
             <h2 class="plus">Afficher plus</h2>
         </section>
 
@@ -191,7 +187,7 @@
         <section class="pop_section">
             <div class="pop-title-ctn">
                 <h2 class="pop-title">Les plus populaires</h2>
-                <i class="fas fa-chart-line"></i>
+                <i class="fas fa-chart-line fa-lg"></i>
             </div>
             <div class="pop-container">
                 <!--Box 1-->
@@ -209,7 +205,6 @@
                             <i class="fas fa-star star-true"></i>
                         </div>
                     </div>
-
                 </div>
                 <!--Box 2-->
                 <div class="pop-box">
@@ -226,7 +221,6 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-
                 </div>
                 <!--Box 3-->
                 <div class="pop-box">
