@@ -7,7 +7,7 @@
     <title>Reservia</title>
     <link rel="icon" href="images/logo/Reservia.svg">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <script src="https://kit.fontawesome.com/b18b5c0298.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,11 +24,9 @@
 
     <!--_______________________SECTION 1 | Filtre_______________________ -->
     <section class="filtre-section">
-        <!--Title-->
         <h1 class="filtre-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <!--Subtitle-->
         <p class="filtre-subtitle">En plein centre ville ou en pleine nature</p>
-        <!--Input TEXTE-->
+        <!--Champ de recherche-->
         <form class="filtre-search">
             <div class="inp-icon">
                 <i class="fas fa-map-marker-alt"></i>
@@ -38,7 +36,7 @@
                 <i class="fas fa-search"></i>
             </button>
         </form>
-        <!--Filtre-->
+        <!--Filtres-->
         <div class="filtre-container">
             <p id="filtre-ctn-txt">Filtres</p>
             <div class="filtre-box">
@@ -80,11 +78,11 @@
         <!--_______________________SECTION 2 | Hébergement à Marseille_______________________-->
         <section class="hebergement-section" id="hebergement-section">
             <h2 class="hebergement-title">Hébergements à Marseille</h2>
-            <!--Grid-->
+            <!--Box container-->
             <div class="hebergement-grid">
                 <!--Box 1-->
-                <div class="hebergement-box">
-                    <img src="images/hebergements/4_small/auberge-cannebiere.jpg" class="hebergement-box-img"
+                <a class="hebergement-box" href="#">
+                    <img src="images/hebergements/auberge-cannebiere.jpg" class="hebergement-box-img"
                         alt="Auberge la Cannebière">
                     <p class="hebergement-title-box">Auberge la Cannebière</p>
                     <div>
@@ -97,10 +95,10 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!--Box 2-->
-                <div class="hebergement-box">
-                    <img src="images/hebergements/4_small/hotel-port.jpg" class="hebergement-box-img"
+                <a class="hebergement-box" href="#">
+                    <img src="images/hebergements/hotel-port.jpg" class="hebergement-box-img"
                         alt="Hôtel du port">
                     <p class="hebergement-title-box">Hôtel du port</p>
                     <div>
@@ -113,10 +111,10 @@
                             <i class="fas fa-star star-true"></i>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!--Box 3-->
-                <div class="hebergement-box">
-                    <img src="images/hebergements/4_small/hotel-mouette.jpg" class="hebergement-box-img"
+                <a class="hebergement-box" href="#">
+                    <img src="images/hebergements/hotel-mouette.jpg" class="hebergement-box-img"
                         alt="Hôtel Les mouettes">
                     <p class="hebergement-title-box">Hôtel Les mouettes</p>
                     <div>
@@ -129,10 +127,10 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!--Box 4-->
-                <div class="hebergement-box">
-                    <img src="images/hebergements/4_small/hotel-mer.jpg" class="hebergement-box-img"
+                <a class="hebergement-box" href="#">
+                    <img src="images/hebergements/hotel-mer.jpg" class="hebergement-box-img"
                         alt="Hôtel de la mer">
                     <p class="hebergement-title-box">Hôtel de la mer</p>
                     <div>
@@ -145,10 +143,10 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!--Box 5-->
-                <div class="hebergement-box">
-                    <img src="images/hebergements/4_small/auberge-panier.jpg" class="hebergement-box-img"
+                <a class="hebergement-box" href="#">
+                    <img src="images/hebergements/auberge-panier.jpg" class="hebergement-box-img"
                         alt="Auberge Le Panier">
                     <p class="hebergement-title-box">Auberge Le Panier</p>
                     <div>
@@ -161,10 +159,10 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!--Box 6-->
-                <div class="hebergement-box">
-                    <img src="images/hebergements/1_xlarge/hotel-amina.jpg" class="hebergement-box-img"
+                <a class="hebergement-box" href="#">
+                    <img src="images/hebergements/hotel-amina.jpg" class="hebergement-box-img"
                         alt="Hôtel chez Amina">
                     <p class="hebergement-title-box">Hôtel chez Amina</p>
                     <div>
@@ -177,7 +175,7 @@
                             <i class="fas fa-star star-true"></i>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <h2 class="plus">Afficher plus</h2>
         </section>
@@ -189,10 +187,11 @@
                 <h2 class="pop-title">Les plus populaires</h2>
                 <i class="fas fa-chart-line fa-lg"></i>
             </div>
+            <!--Box container-->
             <div class="pop-container">
                 <!--Box 1-->
-                <div class="pop-box">
-                    <img class="box-img" src="images/hebergements/4_small/hotel-soleil.jpg"
+                <a class="pop-box" href="#">
+                    <img class="box-img" src="images/hebergements/hotel-soleil.jpg"
                         alt="Hôtel Le soleil du matin">
                     <div class="pop-box-para">
                         <p class="pop-box-title">Hôtel Le soleil du matin</p>
@@ -205,10 +204,10 @@
                             <i class="fas fa-star star-true"></i>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!--Box 2-->
-                <div class="pop-box">
-                    <img class="box-img" src="images/hebergements/4_small/hote-coeur-eau.jpg"
+                <a class="pop-box" href="#">
+                    <img class="box-img" src="images/hebergements/hote-coeur-eau.jpg"
                         alt="Au coeur de l'eau Chambres d'hôtes">
                     <div class="pop-box-para">
                         <p class="pop-box-title">Au coeur de l'eau Chambres d'hôtes</p>
@@ -221,10 +220,10 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!--Box 3-->
-                <div class="pop-box">
-                    <img class="box-img" src="images/hebergements/4_small/hotel-bleu-blanc.jpg"
+                <a class="pop-box" href="#">
+                    <img class="box-img" src="images/hebergements/hotel-bleu-blanc.jpg"
                         alt="Hôtel Tout bleu et Blanc ">
                     <div class="pop-box-para">
                         <p class="pop-box-title">Hôtel Tout bleu et Blanc</p>
@@ -237,7 +236,7 @@
                             <i class="fas fa-star star-true"></i>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
 
@@ -248,38 +247,39 @@
 
     <section class="activite-section" id="activite-section">
         <h2 id="activite-title">Activités à Marseille</h2>
+        <!--Box container-->
         <div class="activite-grid">
             <!--Box 1-->
-            <div class="activite-box box1">
-                <img class="act-box-img" src="images/activites/4_small/vieux-port.jpg" alt="Vieux Port">
+            <a class="activite-box box1" href="#">
+                <img class="act-box-img" src="images/activites/vieux-port.jpg" alt="Vieux Port">
                 <p class="act-box-title">Vieux Port</p>
-            </div>
+            </a>
             <!--Box 2-->
-            <div class="activite-box box2">
-                <img class="act-box-img" src="images/activites/4_small/fort-pomègues.jpg" alt="Fort de Pomègues">
+            <a class="activite-box box2" href="#">
+                <img class="act-box-img" src="images/activites/fort-pomègues.jpg" alt="Fort de Pomègues">
                 <p class="act-box-title">Fort de Pomègues</p>
-            </div>
+            </a>
             <!--Box 3-->
-            <div class="activite-box box3">
-                <img class="act-box-img" src="images/activites/4_small/iles-frioul.jpg" alt="Îles du Frioul">
+            <a class="activite-box box3" href="#">
+                <img class="act-box-img" src="images/activites/iles-frioul.jpg" alt="Îles du Frioul">
                 <p class="act-box-title">Îles du Frioul</p>
-            </div>
+            </a>
             <!--Box 4-->
-            <div class="activite-box box4">
-                <img class="act-box-img" src="images/activites/4_small/calanques.jpg" alt="Parc National des Calanques">
+            <a class="activite-box box4" href="#">
+                <img class="act-box-img" src="images/activites/calanques.jpg" alt="Parc National des Calanques">
                 <p class="act-box-title">Parc National des Calanques</p>
-            </div>
+            </a>
             <!--Box 5-->
-            <div class="activite-box box5">
-                <img class="act-box-img" src="images/activites/4_small/notre-dame-de-la-garde.jpg"
+            <a class="activite-box box5" href="#">
+                <img class="act-box-img" src="images/activites/notre-dame-de-la-garde.jpg"
                     alt="Notre-Dame-de-la-Guarde">
                 <p class="act-box-title">Notre-Dame-de-la-Guarde</p>
-            </div>
+            </a>
             <!--Box 6-->
-            <div class="activite-box box6">
-                <img class="act-box-img" src="images/activites/4_small/parc-longchamp.jpg" alt="Parc Longchamp">
+            <a class="activite-box box6" href="#">
+                <img class="act-box-img" src="images/activites/parc-longchamp.jpg" alt="Parc Longchamp">
                 <p class="act-box-title">Parc Longchamp</p>
-            </div>
+            </a>
         </div>
     </section>
 
