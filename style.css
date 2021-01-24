@@ -32,21 +32,35 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 30px;
+    padding-left: 30px;
     width: auto;
 }
 
 .header-link {
-    margin-left: 70px;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .this-page {
     color: #0065FC;
+    border-top: 3px solid #0065FC;
+    height: 103px;
+
 }
 
 #inscription {
     color: #0065FC;
     font-weight: bold;
+}
+
+.header-nav {
+    height: 105px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 
@@ -343,6 +357,7 @@ header {
     max-width: 400px;
     height: 551px;
     margin-left: 0;
+    min-width: 358px;
 }
 
 .pop-title {
@@ -387,11 +402,16 @@ header {
     width: 33%;
     height: 100%;
     border-radius: 20px 0px 0px 20px;
+    min-width: 110px;
 }
 
 .pop-box-para {
     height: 100%;
     padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .pop-box-title {
@@ -401,13 +421,12 @@ header {
 
 .pop-box-subtitle {
     margin-top: 10px;
+    margin-bottom: auto;
 }
 
 /* Elément STAR NOTES réutilisé de la ligne 275, et modifié ci-dessous */
 .pop-box-para>div {
-    margin-left: 0;
-    position: relative;
-    top: 15px;
+    margin: 0;
 }
 
 /* ___________________________________________SECTION 4 | ACTIVITE ___________________________________________ */
@@ -570,6 +589,7 @@ footer {
         display: flex;
         width: 100%;
         margin-top: 10px;
+        height: auto;
     }
 
     .header-nav :nth-child(1) {
@@ -595,11 +615,14 @@ footer {
         position: absolute;
         right: 30px;
         top: 43px;
+        height: auto;
+        width: auto;
     }
 
 
     .this-page {
         border-bottom: 3px solid #0065FC;
+        border-top: 0;
     }
 
 
@@ -616,7 +639,7 @@ footer {
     }
 
     .filtre-box {
-        margin: 0 10px 10px 10px;
+        margin: 0 5px 10px 5px;
     }
 
     /*Hébergement*/
@@ -659,6 +682,7 @@ footer {
         width: 100%;
         max-width: none;
         height: 551px;
+        min-width: auto;
     }
 
     .pop-container {
@@ -679,6 +703,10 @@ footer {
         align-items: center;
         justify-content: flex-start;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+    }
+
+    .box-img {
+        width: 50%;
     }
 
     /*Activité*/
@@ -757,6 +785,30 @@ footer {
         display: none;
     }
 
+    .filtre-title {
+        font-size: 18px;
+    }
+
+    .filtre-subtitle {
+        font-size: 14px;
+    }
+
+    .filtre-container {
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+    .filtre-box-txt {
+        margin: 0 10px;
+    }
+
+    div.filtre-box:nth-child(4) {
+        margin-right: 100%;
+    }
+
+    .info-txt {
+        font-size: 14px;
+    }
 
     /*Hébergement*/
     .hebergement-grid {
@@ -771,7 +823,7 @@ footer {
     }
 
     .hebergement-box-img {
-        height: 200px;
+        height: 150px;
     }
 
     .hebergement-section {
@@ -782,16 +834,45 @@ footer {
         font-size: 22px;
     }
 
+    .hebergement-title-box {
+        font-size: 16px;
+    }
+
+    .hebergement-subtitle {
+        font-size: 14px;
+    }
+
     /*Populaire*/
 
     .pop-title {
         font-size: 22px;
     }
 
+    .box-img {
+        width: 33%;
+        min-width: 105px;
+    }
+
+    .pop-box-title {
+        font-size: 16px;
+    }
+
+    .pop-box-subtitle {
+        font-size: 14px;
+    }
+
     /*Activité*/
 
     #activite-title {
         font-size: 22px;
+    }
+
+    .act-box-img {
+        height: 150px !important;
+    }
+
+    .activite-box {
+        height: 200px;
     }
 
     /*Footer*/
