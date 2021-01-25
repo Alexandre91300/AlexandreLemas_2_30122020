@@ -266,7 +266,6 @@ header {
     grid-gap: 20px;
     margin-right: 10px;
     justify-content: center;
-    max-width: 775px;
 }
 
 .hebergement-title {
@@ -453,7 +452,7 @@ header {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 250px);
+    grid-template-rows: repeat(2, 180px);
     margin-top: 30px;
 }
 
@@ -524,7 +523,7 @@ header {
 /*Définition de la taille des grandes images*/
 .box1>img,
 .box4>img {
-    height: 480px;
+    height: 350px;
 }
 
 /*Définition de la taille des petites images*/
@@ -533,7 +532,7 @@ header {
 .box3>img,
 .box5>img,
 .box6>img {
-    height: 200px;
+    height: 130px;
 }
 
 /* ___________________________________________FOOTER___________________________________________ */
@@ -565,6 +564,15 @@ footer {
 /* -------------------------------------------RESPONSIVE------------------------------------------- */
 /* ________________________________________________________________________________________________ */
 
+
+/* ___________________________________________HIGH RESOLUTIONS < 1300PX ___________________________________________ */
+@media screen and (min-width: 1300px) {
+
+    /*Hébergement*/
+    .hebergement-grid {
+        grid-template-columns: repeat(3, minmax(33%, 180px));
+    }
+}
 
 /* ___________________________________________TABLETTE < 990PX ___________________________________________ */
 
@@ -823,7 +831,7 @@ footer {
     }
 
     .hebergement-box-img {
-        height: 150px;
+        height: 100px;
     }
 
     .hebergement-section {
